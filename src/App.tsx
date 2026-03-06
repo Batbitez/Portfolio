@@ -1,0 +1,27 @@
+import { BrowserRouter, Route, Routes } from "react-router";
+// Pages
+import Home from "./pages/Home";
+import Portfolio from "./pages/Portfolio";
+import Contact from "./pages/Contact";
+import About from "./pages/About";
+// Components
+import Background from "./components/Background";
+import Navbar from "./components/Navbar";
+
+export default function App() {
+  return (
+    <Background>
+      <BrowserRouter>
+        <Navbar />
+        <div className="items-center text-center mx-auto mt-24">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/portfolio" element={<Portfolio />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
+        </div>
+      </BrowserRouter>
+    </Background>
+  );
+}
