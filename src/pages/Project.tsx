@@ -1,0 +1,62 @@
+import { useParams } from "react-router";
+import { projects } from "../data/projects";
+import ScrollableGallery from "../components/ScrollableGallery";
+
+export default function ProjectPage() {
+  const { slug } = useParams<{ slug: string }>();
+  const project = projects.find((p) => p.slug === slug);
+
+  if (!project)
+    return <div className="text-center mt-20">Project not found</div>;
+
+  return (
+    <div className="max-w-7xl mx-auto px-8 py-16">
+      <div className="grid md:grid-cols-[3fr_1fr] gap-12">
+        {/* LEFT COLUMN */}
+        <div>
+          {project.galleries?.map((gallery, i) => (
+            <section key={i} className="mb-16">
+              <h2 className="text-2xl font-semibold mb-6">{gallery.title}</h2>
+              <ScrollableGallery images={gallery.images} alt={project.title} />
+            </section>
+          ))}
+        </div>
+
+        {/* RIGHT COLUMN */}
+        <aside className="space-y-6">
+          <h1 className="text-4xl font-bold mb-6 font-display">
+            {project.title}
+          </h1>
+          <p className="text-lg leading-relaxed mb-10">{project.description}</p>
+
+          <div>
+            <h3 className="text-sm text-light-gray uppercase tracking-widest">
+              Role
+            </h3>
+            <p>{project.role}</p>
+          </div>
+
+          <div>
+            <h3 className="text-sm text-light-gray uppercase tracking-widest">
+              Year
+            </h3>
+            <p>{project.year}</p>
+          </div>
+
+          <div>
+            <h3 className="text-sm text-light-gray uppercase tracking-widest">
+              Tools Used
+            </h3>
+            <ul className="flex flex-wrap gap-2 mt-2 justify-center">
+              {project.tools.map((tool, i) => (
+                <li key={i} className="px-3 py-1 border rounded-full text-sm">
+                  {tool}
+                </li>
+              ))}
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </div>
+  );
+}
