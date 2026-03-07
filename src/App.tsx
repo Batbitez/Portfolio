@@ -13,7 +13,7 @@ export default function App() {
     <Background>
       <BrowserRouter>
         <Navbar />
-        <div className="items-center text-center mx-auto mt-24">
+        <div className="items-center text-center mx-auto mt-16 text-lg">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/portfolio" element={<Portfolio />} />

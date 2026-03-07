@@ -1,9 +1,15 @@
 export default function About() {
   return (
-    <div className="max-w-2xl mx-auto flex justify-between gap-6">
-      <div>Image</div>
+    <div className="max-w-4xl mx-auto flex justify-between items-center mb-24">
+      <div>
+        <img
+          src="/images/ui/Portrait.jpg"
+          alt="Profile"
+          className="h-150 w-auto rounded-full"
+        />
+      </div>
 
-      <div className="max-w-md mx-auto gap-4 flex flex-col text-md text-right">
+      <div className="w-sm gap-4 flex flex-col text-md text-left">
         <p>
           I'm a 2D and 3D artist passionate about creating characters and worlds
           that people connect with. As a cosplayer myself, I especially enjoy

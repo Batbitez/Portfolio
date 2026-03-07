@@ -18,7 +18,7 @@ export default function Home() {
           onClick={() => {
             navigate("/portfolio");
           }}
-          className="bg-charcoal border-white border hover:bg-black text-white py-2 px-10 m-6 rounded"
+          className="bg-charcoal border-white border hover:bg-black text-white py-2 px-10 m-6 rounded-full transition hover:scale-110"
         >
           View My Work
         </button>
