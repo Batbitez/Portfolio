@@ -33,7 +33,7 @@ export default function Portfolio() {
       </div>
 
       {/* Gallery Content */}
-      <div className="max-w-6xl mx-auto relative min-h-[500px]">
+      <div className="max-w-6xl mx-auto relative min-h-125">
         <div
           className={`absolute inset-0 transition-opacity duration-500 ${
             activeTab === "drawings" ? "opacity-100 z-10" : "opacity-0 z-0"

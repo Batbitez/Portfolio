@@ -84,4 +84,39 @@ export const projects = [
       },
     ],
   },
+  {
+    slug: "wosc",
+    title: "The Witch of Sugar Creek",
+    role: "Character Designer, Modeller, Texture Artist, Animator & Game Developer",
+    year: 2025,
+    tools: ["Blender", "Substance Painter", "Photoshop", "Unreal Engine 5"],
+    hero: "/images/art/2d/Witch/WitchModel.png",
+    description:
+      "The Witch of Sugar Creek is a 3D cozy rpg about a witch who finds a home in a small town, helping the townsfolk with their problems and learning about herself in the process. The game is currently in development with no release date set.",
+    galleries: [
+      {
+        title: "Character Models",
+        images: ["/images/art/3d/Witch/Witch360Tex0001.png"],
+      },
+    ],
+  },
+  {
+    slug: "lso",
+    title: "Last Seen Online",
+    role: "Artist & Game Developer",
+    year: 2026,
+    tools: ["Aseprite", "Godot"],
+    hero: "/images/art/2d/Witch/WitchModel.png",
+    description:
+      "Last Seen Online is an isometric pixel puzzle game. Your friend has gone missing, and it's up to you to search their room for clues and solve puzzles to find out what happened to them. The game is currently in development set to release in late 2026.",
+    galleries: [
+      {
+        title: "Game Art",
+        images: [
+          "/images/art/2d/LastSeenOnline/Room.jpg",
+          "/images/art/2d/LastSeenOnline/Desktop.jpg",
+        ],
+      },
+    ],
+  },
 ];
