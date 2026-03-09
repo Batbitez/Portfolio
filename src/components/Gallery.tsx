@@ -17,6 +17,7 @@ const Gallery: React.FC<GalleryProps> = ({ images }) => (
             <img
               src={img.src}
               alt={img.alt}
+              loading="lazy"
               className="w-full h-auto object-contain transition-transform duration-300 group-hover:scale-105"
             />
 

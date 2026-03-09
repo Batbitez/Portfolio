@@ -1,23 +1,23 @@
 import { NavLink } from "react-router";
 
+const base = import.meta.env.BASE_URL;
+
 export default function Navbar() {
   return (
-    <nav className="flex justify-between items-center px-24 py-2 mt-10 text-lg">
-      {/* left group */}
-      <ul className="flex">
-        <li>
-          <NavLink to="/">
-            <img
-              src="/images/ui/Logo_White.png"
-              alt="Home"
-              className="h-26 w-auto"
-            />
-          </NavLink>
-        </li>
-      </ul>
+    <nav className="flex flex-col sm:flex-row items-center justify-between px-6 sm:px-24 py-4 text-lg">
+      {/* Logo */}
+      <div className="mb-4 sm:mb-0">
+        <NavLink to="/">
+          <img
+            src={`${base}images/ui/Logo_White.png`}
+            alt="Home"
+            className="h-20 w-auto sm:h-26"
+          />
+        </NavLink>
+      </div>
 
-      {/* right group */}
-      <ul className="flex gap-4">
+      {/* Navigation Links */}
+      <ul className="flex gap-4 items-center justify-center w-full sm:w-auto">
         <li>
           <NavLink
             to="/"
@@ -30,7 +30,7 @@ export default function Navbar() {
             Home
           </NavLink>
         </li>
-        <li> · </li>
+        <li className="hidden sm:inline">·</li>
         <li>
           <NavLink
             to="/portfolio"
@@ -43,7 +43,7 @@ export default function Navbar() {
             Portfolio
           </NavLink>
         </li>
-        <li> · </li>
+        <li className="hidden sm:inline">·</li>
         <li>
           <NavLink
             to="/about"
@@ -56,7 +56,7 @@ export default function Navbar() {
             About
           </NavLink>
         </li>
-        <li> · </li>
+        <li className="hidden sm:inline">·</li>
         <li>
           <NavLink
             to="/contact"

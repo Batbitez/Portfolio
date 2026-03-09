@@ -1,3 +1,5 @@
+const base = import.meta.env.BASE_URL;
+
 export const projects = [
   {
     slug: "disc-dryve",
@@ -12,8 +14,8 @@ export const projects = [
       {
         title: "Concept",
         images: [
-          "/images/art/2d/DiscDryve/DiscDryve.jpg",
-          "/images/art/2d/DiscDryve/DiscDryve2.png",
+          `${base}images/art/2d/DiscDryve/DiscDryve.jpg`,
+          `${base}images/art/2d/DiscDryve/DiscDryve2.png`,
         ],
       },
     ],
@@ -31,11 +33,11 @@ export const projects = [
       {
         title: "",
         images: [
-          "/images/art/2d/MonsterGirls/Zombae.png",
-          "/images/art/2d/MonsterGirls/SeaBabe.png",
-          "/images/art/2d/MonsterGirls/MothMommy.png",
-          "/images/art/2d/MonsterGirls/BatBitez.png",
-          "/images/art/2d/MonsterGirls/OniMania.png",
+          `${base}images/art/2d/MonsterGirls/Zombae.png`,
+          `${base}images/art/2d/MonsterGirls/SeaBabe.png`,
+          `${base}images/art/2d/MonsterGirls/MothMommy.png`,
+          `${base}images/art/2d/MonsterGirls/BatBitez.png`,
+          `${base}images/art/2d/MonsterGirls/OniMania.png`,
         ],
       },
     ],
@@ -46,40 +48,40 @@ export const projects = [
     role: "Character Designer, Modeller & Texture Artist",
     year: 2025,
     tools: ["Blender", "Substance Painter", "Photoshop"],
-    hero: "/images/art/2d/Witch/WitchModel.png",
+    hero: "/images/art/2d/Witch/thumb/WitchModel.png",
     description:
       "The main character for my upcoming game 'Witch of Sugar Creek'.",
     galleries: [
       {
         title: "Textured",
         images: [
-          "/images/art/3d/Witch/Witch360Tex0001.png",
-          "/images/art/3d/Witch/Witch360Tex0002.png",
-          "/images/art/3d/Witch/Witch360Tex0003.png",
-          "/images/art/3d/Witch/Witch360Tex0004.png",
-          "/images/art/3d/Witch/Witch360Tex0005.png",
-          "/images/art/3d/Witch/Witch360Tex0006.png",
-          "/images/art/3d/Witch/Witch360Tex0007.png",
-          "/images/art/3d/Witch/Witch360Tex0008.png",
-          "/images/art/3d/Witch/Witch360Tex0009.png",
-          "/images/art/3d/Witch/Witch360Tex0010.png",
-          "/images/art/3d/Witch/Witch360Tex0011.png",
+          `${base}images/art/3d/Witch/thumb/Witch360Tex0001.png`,
+          `${base}images/art/3d/Witch/thumb/Witch360Tex0002.png`,
+          `${base}images/art/3d/Witch/thumb/Witch360Tex0003.png`,
+          `${base}images/art/3d/Witch/thumb/Witch360Tex0004.png`,
+          `${base}images/art/3d/Witch/thumb/Witch360Tex0005.png`,
+          `${base}images/art/3d/Witch/thumb/Witch360Tex0006.png`,
+          `${base}images/art/3d/Witch/thumb/Witch360Tex0007.png`,
+          `${base}images/art/3d/Witch/thumb/Witch360Tex0008.png`,
+          `${base}images/art/3d/Witch/thumb/Witch360Tex0009.png`,
+          `${base}images/art/3d/Witch/thumb/Witch360Tex0010.png`,
+          `${base}images/art/3d/Witch/thumb/Witch360Tex0011.png`,
         ],
       },
       {
         title: "Wireframe",
         images: [
-          "/images/art/3d/Witch/Witch360Wire0001.png",
-          "/images/art/3d/Witch/Witch360Wire0002.png",
-          "/images/art/3d/Witch/Witch360Wire0003.png",
-          "/images/art/3d/Witch/Witch360Wire0004.png",
-          "/images/art/3d/Witch/Witch360Wire0005.png",
-          "/images/art/3d/Witch/Witch360Wire0006.png",
-          "/images/art/3d/Witch/Witch360Wire0007.png",
-          "/images/art/3d/Witch/Witch360Wire0008.png",
-          "/images/art/3d/Witch/Witch360Wire0009.png",
-          "/images/art/3d/Witch/Witch360Wire0010.png",
-          "/images/art/3d/Witch/Witch360Wire0011.png",
+          `${base}images/art/3d/Witch/thumb/Witch360Wire0001.png`,
+          `${base}images/art/3d/Witch/thumb/Witch360Wire0002.png`,
+          `${base}images/art/3d/Witch/thumb/Witch360Wire0003.png`,
+          `${base}images/art/3d/Witch/thumb/Witch360Wire0004.png`,
+          `${base}images/art/3d/Witch/thumb/Witch360Wire0005.png`,
+          `${base}images/art/3d/Witch/thumb/Witch360Wire0006.png`,
+          `${base}images/art/3d/Witch/thumb/Witch360Wire0007.png`,
+          `${base}images/art/3d/Witch/thumb/Witch360Wire0008.png`,
+          `${base}images/art/3d/Witch/thumb/Witch360Wire0009.png`,
+          `${base}images/art/3d/Witch/thumb/Witch360Wire0010.png`,
+          `${base}images/art/3d/Witch/thumb/Witch360Wire0011.png`,
         ],
       },
     ],
@@ -90,13 +92,13 @@ export const projects = [
     role: "Character Designer, Modeller, Texture Artist, Animator & Game Developer",
     year: 2025,
     tools: ["Blender", "Substance Painter", "Photoshop", "Unreal Engine 5"],
-    hero: "/images/art/2d/Witch/WitchModel.png",
+    hero: "/images/art/2d/Witch/thumb/WitchModel.png",
     description:
       "The Witch of Sugar Creek is a 3D cozy rpg about a witch who finds a home in a small town, helping the townsfolk with their problems and learning about herself in the process. The game is currently in development with no release date set.",
     galleries: [
       {
         title: "Character Models",
-        images: ["/images/art/3d/Witch/Witch360Tex0001.png"],
+        images: [`${base}images/art/3d/Witch/thumb/Witch360Tex0001.png`],
       },
     ],
   },
@@ -106,15 +108,15 @@ export const projects = [
     role: "Artist & Game Developer",
     year: 2026,
     tools: ["Aseprite", "Godot"],
-    hero: "/images/art/2d/Witch/WitchModel.png",
+    hero: "/images/art/2d/Witch/thumb/WitchModel.png",
     description:
       "Last Seen Online is an isometric pixel puzzle game. Your friend has gone missing, and it's up to you to search their room for clues and solve puzzles to find out what happened to them. The game is currently in development set to release in late 2026.",
     galleries: [
       {
         title: "Game Art",
         images: [
-          "/images/art/2d/LastSeenOnline/Room.jpg",
-          "/images/art/2d/LastSeenOnline/Desktop.jpg",
+          `${base}images/art/2d/LastSeenOnline/Room.jpg`,
+          `${base}images/art/2d/LastSeenOnline/Desktop.jpg`,
         ],
       },
     ],

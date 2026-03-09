@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from "react-router";
+import { HashRouter, Route, Routes } from "react-router";
 // Pages
 import Home from "./pages/Home";
 import Portfolio from "./pages/Portfolio";
@@ -12,7 +12,7 @@ import Navbar from "./components/Navbar";
 export default function App() {
   return (
     <Background>
-      <BrowserRouter>
+      <HashRouter>
         <Navbar />
         <div className="items-center text-center mx-auto mt-16 text-lg">
           <Routes>
@@ -23,7 +23,7 @@ export default function App() {
             <Route path="/portfolio/:slug" element={<ProjectPage />} />
           </Routes>
         </div>
-      </BrowserRouter>
+      </HashRouter>
     </Background>
   );
 }

@@ -12,18 +12,8 @@ export default function ProjectPage() {
   return (
     <div className="max-w-7xl mx-auto px-8 py-16">
       <div className="grid md:grid-cols-[3fr_1fr] gap-12">
-        {/* LEFT COLUMN */}
-        <div>
-          {project.galleries?.map((gallery, i) => (
-            <section key={i} className="mb-16">
-              <h2 className="text-2xl font-semibold mb-6">{gallery.title}</h2>
-              <ScrollableGallery images={gallery.images} alt={project.title} />
-            </section>
-          ))}
-        </div>
-
-        {/* RIGHT COLUMN */}
-        <aside className="space-y-6">
+        {/* RIGHT COLUMN INFO */}
+        <aside className="space-y-6 order-1 md:order-2">
           <h1 className="text-4xl font-bold mb-6 font-display">
             {project.title}
           </h1>
@@ -56,6 +46,16 @@ export default function ProjectPage() {
             </ul>
           </div>
         </aside>
+
+        {/* LEFT COLUMN GALLERIES */}
+        <div className="order-2 md:order-1">
+          {project.galleries?.map((gallery, i) => (
+            <section key={i} className="mb-16">
+              <h2 className="text-2xl font-semibold mb-6">{gallery.title}</h2>
+              <ScrollableGallery images={gallery.images} alt={project.title} />
+            </section>
+          ))}
+        </div>
       </div>
     </div>
   );

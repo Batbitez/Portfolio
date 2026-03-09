@@ -1,15 +1,19 @@
+const base = import.meta.env.BASE_URL;
+
 export default function About() {
   return (
-    <div className="max-w-4xl mx-auto flex justify-between items-center mb-24">
-      <div>
+    <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-center md:items-start mb-24 gap-8 px-4">
+      {/* Profile Image */}
+      <div className="shrink-0">
         <img
-          src="/images/ui/Portrait.jpg"
+          src={`${base}images/ui/Portrait.jpg`}
           alt="Profile"
-          className="h-150 w-auto rounded-full"
+          className="w-48 h-48 md:w-150 md:h-150 rounded-full object-cover"
         />
       </div>
 
-      <div className="w-sm gap-4 flex flex-col text-md text-left">
+      {/* About Text */}
+      <div className="flex flex-col gap-4 text-md text-left">
         <p>
           I'm a 2D and 3D artist passionate about creating characters and worlds
           that people connect with. As a cosplayer myself, I especially enjoy

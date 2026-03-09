@@ -15,7 +15,7 @@
 
 @font-face {
   font-family: "Griffy";
-  src: url("src/assets/fonts/Griffy.ttf") format("truetype");
+  src: url("/fonts/Griffy.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -23,7 +23,7 @@
 
 @font-face {
   font-family: "Cormorant Garamond";
-  src: url("src/assets/fonts/CormorantGaramond.ttf") format("truetype");
+  src: url("/fonts/CormorantGaramond.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
