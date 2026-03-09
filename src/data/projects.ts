@@ -26,7 +26,7 @@ export const projects = [
     tools: ["Procreate"],
     hero: "/images/art/2d/MonsterGirls/Zombae.png",
     description:
-      "A collection of characters based on various popular monsters.",
+      "A collection of characters I've designed based on various popular monsters.",
     galleries: [
       {
         title: "",
