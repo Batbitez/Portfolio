@@ -8,7 +8,7 @@ export default function About() {
         <img
           src={`${base}images/ui/Portrait.jpg`}
           alt="Profile"
-          className="w-48 h-48 md:w-150 md:h-150 rounded-full object-cover"
+          className="w-48 h-48 md:w-auto md:h-150 rounded-full object-cover"
         />
       </div>
 
