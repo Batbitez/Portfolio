@@ -89,6 +89,7 @@ export const projects = [
   {
     slug: "wosc",
     title: "The Witch of Sugar Creek",
+    youtubeId: "Zn0Mi4UZCZA",
     role: "Character Designer, Modeller, Texture Artist, Animator & Game Developer",
     year: 2025,
     tools: ["Blender", "Substance Painter", "Photoshop", "Unreal Engine 5"],
@@ -117,6 +118,34 @@ export const projects = [
         images: [
           `${base}images/art/2d/LastSeenOnline/Room.jpg`,
           `${base}images/art/2d/LastSeenOnline/Desktop.jpg`,
+        ],
+      },
+    ],
+  },
+  {
+    slug: "decoradial",
+    title: "DecoraDial",
+    links: [
+      { label: "Itch.io", url: "https://batbitez.itch.io/decoradial" },
+      {
+        label: "Game Jam Page",
+        url: "https://itch.io/jam/-girly-game-jam-3-1",
+      },
+    ],
+    role: "Programmer",
+    year: 2026,
+    tools: ["Godot"],
+    hero: "/images/art/2d/Witch/thumb/WitchModel.png",
+    description:
+      "DecoraDial is a cozy little customization game where you deck out your very own devices with stickers, charms, and plushies. Pick your favorites, place them just right, and make them totally yours. Inspired by the Frutiger Aero aesthetic of the early 2000s. Glossy icons, soft gradients, and that feeling like technology was something magical and new. If you grew up picking out flip phone charms or decorating your DS, this one's for you. Made with love for Girly Game Jam #3 as a first game jam project.",
+    galleries: [
+      {
+        title: "Game Art",
+        images: [
+          `${base}images/art/2d/DecoraDial/Title.png`,
+          `${base}images/art/2d/DecoraDial/Credits.png`,
+          `${base}images/art/2d/DecoraDial/Gameplay.png`,
+          `${base}images/art/2d/DecoraDial/HowTo.png`,
         ],
       },
     ],
