@@ -7,7 +7,7 @@ export default function Contact() {
         href="mailto:contact@example.com"
         className="text-plum hover:underline"
       >
-        contact@example.com
+        lizthompsondesign@gmail.com
       </a>
     </div>
   );
